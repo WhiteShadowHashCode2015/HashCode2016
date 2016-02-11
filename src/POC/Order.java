@@ -17,6 +17,20 @@ public class Order {
     public List<Product> DeliveryProduct;
 
 
+    public boolean orderFinish(){
+        return Products.size() == DeliveryProduct.size();
+    }
+
+    public List<Product> GetRemainProduct (){
+
+        if(orderFinish())
+            return null;
+        List<Product> deliveryProdcuct = ArrayList
+        for (Product p : Products){
+
+        }
+    }
+
     public void DeliveryProduct(Product p){
         DeliveryProduct.add(p);
     }
