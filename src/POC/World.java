@@ -15,4 +15,10 @@ public class World {
 
     public int MaxRound;
 
+    public World(List<Warehouse> wareHouses, int maxRound, int currentRound, List<Drone> drones) {
+        WareHouses = wareHouses;
+        MaxRound = maxRound;
+        CurrentRound = currentRound;
+        Drones = drones;
+    }
 }

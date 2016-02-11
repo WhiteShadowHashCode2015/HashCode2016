@@ -10,4 +10,10 @@ public class Product {
     public int Weight;
 
     public int Count;
+
+    public Product(int id, int count, int weight) {
+        Id = id;
+        Count = count;
+        Weight = weight;
+    }
 }

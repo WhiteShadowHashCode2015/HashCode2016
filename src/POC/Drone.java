@@ -19,5 +19,10 @@ public class Drone {
     public int MaxWeight;
 
 
-
+    public Drone(int id, int maxWeight, POC.Position position, List<Product> payLoad) {
+        Id = id;
+        MaxWeight = maxWeight;
+        Position = position;
+        PayLoad = payLoad;
+    }
 }
