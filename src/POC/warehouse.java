@@ -13,6 +13,8 @@ public class Warehouse {
 
 
 
+
+
     public int GetProductCount(int id ){
 
         for(int i=0; i< Products.size(); i++){
@@ -23,6 +25,8 @@ public class Warehouse {
         }
         return -1;
     }
+
+
 
     public Warehouse(POC.Position position, List<Pair<Integer, Product>> products) {
         Position = position;
