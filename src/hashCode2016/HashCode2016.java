@@ -16,7 +16,7 @@ public class HashCode2016 {
 			GlobalData gd = InputReader.readFile("testInput.in");
 
 		    // Do your work hear
-		    
+		    //comment akm
 			OutputWriter.writeFile("result.out", gd);
 			System.out.println("Fini");
 			
