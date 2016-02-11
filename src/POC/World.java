@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * Created by alexisk on 11/02/2016.
  */
-public class Word {
+public class World {
 
     public List<Warehouse> WareHouses;
 
