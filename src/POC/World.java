@@ -11,6 +11,8 @@ public class World {
 
     public List<Drone>  Drones;
 
+    public List<Order> Orders;
+
     public int CurrentRound;
 
     public int MaxRound;
@@ -20,5 +22,13 @@ public class World {
         MaxRound = maxRound;
         CurrentRound = currentRound;
         Drones = drones;
+    }
+
+    public World(List<Warehouse> wareHouses, List<Drone> drones, List<Order> orders, int currentRound, int maxRound) {
+        WareHouses = wareHouses;
+        Drones = drones;
+        Orders = orders;
+        CurrentRound = currentRound;
+        MaxRound = maxRound;
     }
 }
