@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 
+import POC.Drone;
 import POC.World;
 
 public class OutputWriter {
@@ -13,9 +14,12 @@ public class OutputWriter {
 		PrintWriter pw = new PrintWriter (new File(filename));
 
 
-        pw.print("coucou");
-        pw.print(" ");
-        pw.println();
+        for (Drone d : gd.Drones){
+            pw.print(d.GetCommands());
+            pw.print("\n");
+        }
+
+
 
 
 		pw.close();

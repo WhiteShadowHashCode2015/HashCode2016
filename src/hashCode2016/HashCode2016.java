@@ -19,6 +19,7 @@ public class HashCode2016 {
 			
 			System.out.println(world.toString());
 
+			world = FirstAlgo.Execute(world);
 		    // Do your work hear
 		    //comment akm
 			OutputWriter.writeFile("result.out", world);

@@ -2,6 +2,7 @@ package POC;
 
 
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -33,8 +34,9 @@ public class Drone {
 
     public String GetCommands(){
         StringBuilder builder = new StringBuilder();
-        for (int i = 0; i <Commands.size(); i++) {
-            builder.append(Commands.get(i).GetCommand());
+        for (POC.Command Command : Commands) {
+            builder.append(this.Id + " ");
+            builder.append(Command.GetCommand());
             builder.append("\n");
         }
 
@@ -47,6 +49,8 @@ public class Drone {
         MaxWeight = maxWeight;
         Position = position;
         PayLoad = payLoad;
+
+        Commands = new ArrayList<>();
     }
 
 
