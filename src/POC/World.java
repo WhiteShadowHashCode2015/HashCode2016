@@ -17,6 +17,8 @@ public class World {
 
     public int MaxRound;
 
+    public int MaxNbProduct;
+
     public World(List<Warehouse> wareHouses, int maxRound, int currentRound, List<Drone> drones) {
         WareHouses = wareHouses;
         MaxRound = maxRound;
@@ -24,12 +26,13 @@ public class World {
         Drones = drones;
     }
 
-    public World(List<Warehouse> wareHouses, List<Drone> drones, List<Order> orders, int currentRound, int maxRound) {
+    public World(List<Warehouse> wareHouses, List<Drone> drones, List<Order> orders, int currentRound, int maxRound, int maxNbProduct) {
         WareHouses = wareHouses;
         Drones = drones;
         Orders = orders;
         CurrentRound = currentRound;
         MaxRound = maxRound;
+        MaxNbProduct = maxNbProduct;
     }
 
 	@Override

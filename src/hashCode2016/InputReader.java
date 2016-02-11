@@ -79,7 +79,7 @@ public class InputReader {
 			drones.add(drone);
 		}
 
-		world = new	World(warehouses, drones, orders, 0, nbTurn);
+		world = new	World(warehouses, drones, orders, 0, nbTurn, nbTypeProd);
 		    
 		scanner.close();
 		return world;
