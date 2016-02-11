@@ -9,18 +9,23 @@ public class Warehouse {
 
     public Position Position;
 
-    public List<Product> Products;
+    public List<Pair<Integer,Product>> Products;
 
 
 
-    public Product GetProduct(int id ){
+    public int GetProductCount(int id ){
 
         for(int i=0; i< Products.size(); i++){
-            if(Products.get(i).Id == id) {
-                return Products.get(i);
+            if(Products.get(i).getRight().Id
+                    == id) {
+                return Products.get(i).getLeft();
             }
         }
+        return -1;
     }
 
-
+    public Warehouse(POC.Position position, List<Pair<Integer, Product>> products) {
+        Position = position;
+        Products = products;
+    }
 }
