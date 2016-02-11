@@ -8,4 +8,6 @@ public class Product {
     public int Id;
 
     public int Weight;
+
+    public int Count;
 }
