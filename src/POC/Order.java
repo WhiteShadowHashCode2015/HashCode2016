@@ -1,5 +1,6 @@
 package POC;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -13,10 +14,18 @@ public class Order {
 
     public List<Product> Products;
 
+    public List<Product> DeliveryProduct;
+
+
+    public void DeliveryProduct(Product p){
+        DeliveryProduct.add(p);
+    }
+
     public Order(int id, POC.Position position, List<Product> products) {
         Id = id;
         Position = position;
         Products = products;
+        DeliveryProduct = new ArrayList<>();
     }
 
 	@Override
