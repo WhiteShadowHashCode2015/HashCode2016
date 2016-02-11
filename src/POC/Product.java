@@ -9,11 +9,16 @@ public class Product {
 
     public int Weight;
 
-
-
     public Product(int id,int weight) {
         Id = id;
 
         Weight = weight;
     }
+
+	@Override
+	public String toString() {
+		return "Product [Id=" + Id + ", Weight=" + Weight + "]";
+	}
+    
+    
 }

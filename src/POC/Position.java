@@ -13,4 +13,11 @@ public class Position {
         Row = row;
         Column = column;
     }
+
+	@Override
+	public String toString() {
+		return "Position [Row=" + Row + ", Column=" + Column + "]";
+	}
+    
+    
 }

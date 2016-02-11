@@ -18,4 +18,12 @@ public class Order {
         Position = position;
         Products = products;
     }
+
+	@Override
+	public String toString() {
+		return "\nOrder [Id=" + Id + ", Position=" + Position + ", Products="
+				+ Products + "]";
+	}
+    
+    
 }

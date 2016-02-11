@@ -3,6 +3,8 @@ package hashCode2016;
 import java.util.ArrayList;
 import java.util.List;
 
+import POC.World;
+
 public class HashCode2016 {
 
 	/**
@@ -13,11 +15,13 @@ public class HashCode2016 {
 		
 		
 		try {
-			GlobalData gd = InputReader.readFile("testInput.in");
+			World world = InputReader.readFile("testInput.in");
+			
+			System.out.println(world.toString());
 
 		    // Do your work hear
 		    //comment akm
-			OutputWriter.writeFile("result.out", gd);
+			OutputWriter.writeFile("result.out", world);
 			System.out.println("Fini");
 			
 		} catch (Exception e) {

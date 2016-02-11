@@ -31,4 +31,13 @@ public class World {
         CurrentRound = currentRound;
         MaxRound = maxRound;
     }
+
+	@Override
+	public String toString() {
+		return "World [WareHouses=" + WareHouses + ", Drones=" + Drones
+				+ ", Orders=" + Orders + ", CurrentRound=" + CurrentRound
+				+ ", MaxRound=" + MaxRound + "]";
+	}
+    
+    
 }

@@ -1,6 +1,6 @@
 package POC;
 
-import javafx.geometry.Pos;
+
 
 import java.util.List;
 
@@ -25,4 +25,13 @@ public class Drone {
         Position = position;
         PayLoad = payLoad;
     }
+
+
+	@Override
+	public String toString() {
+		return "\nDrone [Id=" + Id + ", Position=" + Position + ", PayLoad="
+				+ PayLoad + ", MaxWeight=" + MaxWeight + "]";
+	}
+    
+    
 }

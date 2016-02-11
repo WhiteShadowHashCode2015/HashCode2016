@@ -28,4 +28,12 @@ public class Warehouse {
         Position = position;
         Products = products;
     }
+
+	@Override
+	public String toString() {
+		return "\nWarehouse [Position=" + Position + ", Products=" + Products
+				+ "]";
+	}
+    
+    
 }
