@@ -9,11 +9,11 @@ public class Product {
 
     public int Weight;
 
-    public int Count;
 
-    public Product(int id, int count, int weight) {
+
+    public Product(int id,int weight) {
         Id = id;
-        Count = count;
+
         Weight = weight;
     }
 }
